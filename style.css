@@ -667,225 +667,140 @@ header {
 
 
 @media (max-width: 768px) {
-    header {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        align-items: center;
-    }
+  header {
+    grid-template-columns: 1fr auto; /* تقليل الأعمدة */
+    height: 70px;
+    padding: 0 2%;
+  }
 
-    .icons {
-        display: none !important;
-    }
+  .divbar ul {
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    height: calc(100vh - 70px);
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  }
 
-    .menu-btn {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        margin-right: 60%; 
-        cursor: pointer;
-        justify-self: start;
-        transition: transform 0.2s ease;
-    }
+  #menu-toggle:checked + .divbar ul {
+    transform: translateX(0);
+  }
 
-    .menu-btn:hover {
-        transform: scale(1.2);
-    }
+  .menu-btn {
+    display: flex;
+    justify-self: end;
+    cursor: pointer;
+  }
 
-    .divbar {
-        display: none;
-        position: absolute;
-        top: 75px;
-        left: 0;
-        width: 60%;
-        background-color: rgba(236, 229, 203, 0.772);
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #0003;
-        z-index: 999;
-    }
+  .divbar a {
+    font-size: 18px;
+    margin: 8px 0;
+  }
 
-    .divbar ul {
-        display: grid;
-        gap: 15px;
-        text-align: center;
-    }
+  .icons {
+    display: none; /* إخفاء الأيقونات في الحجم الصغير */
+  }
 
-    .divbar ul li a {
-        font-size: 20px;
-        padding: 8px 0;
-    }
+  .home {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
 
-    #menu-toggle:checked ~ .divbar {
-        display: block;
-    }
+  .home h3 {
+    font-size: 32px;
+  }
 
-    .logo img {
-        width: 130px; /* خففت شوي */
-    }
+  .home span,
+  .home p {
+    font-size: 18px;
+  }
 
-    .home {
-        grid-template-columns: 1fr;
-        text-align: right;
-    }
+  .btn {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
 
-    .home p {
-        display: none !important;
-    }
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 5px;
-        gap: 20px;
-    }
-    .product-card {
-        max-width: 100%; /* الكارد ياخذ العرض كامل */
-    }
-    .cat-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
+  .products-grid {
+    grid-template-columns: 1fr 1fr; /* صفين بدل أكثر */
+    gap: 15px;
+  }
 
-    .best-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
+  .product-card {
+    width: 100%;
+  }
 
-    .home-content p {
-        display: none !important;
-    }
+  .img-container:hover img {
+    width: 100% !important;
+    height: 150px !important;
+    border-radius: 12px !important;
+    position: static !important;
+  }
 
-    .home span {
-        font-size: 18px;
-        color: rgb(13, 52, 9);
-        max-width: 50%;
-        word-wrap: break-word;
-    }
+  .desc-text {
+    max-height: none !important;
+    opacity: 1 !important;
+  }
 
-    .footer {
-        text-align: center;
-        padding: 20px 5%;
-    }
+  .best-container {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .footer h3 {
-        font-size: 20px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 15px;
-        padding: 8px;
-    }
-
-    .footer .btn {
-        width: 100%;
-    }
-
-   #messagesList li {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    #messagesList li .delete-btn {
-        font-size: 13px;
-        padding: 5px 10px;
-        margin-top: -16px;
-    }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
+
 @media (max-width: 480px) {
-    body {
-        font-size: 13px;
-    }
-
-    header {
-        grid-template-columns: auto 1fr auto;
-        height: 70px;
-        padding: 0 10px;
-    }
-
-    header .logo img {
-        width: 100px;
-    }
-
-    .menu-btn {
-        margin-right: 60%; /* قللت من 70% لـ 60% */
-        gap: 5px;
-    }
-
-    .menu-btn span {
-        width: 25px;
-        height: 3px;
-    }
-
-    .menu-btn:hover {
-        transform: scale(1.3);
-    }
-
-    .divbar {
-        width: 70%;
-        top: 65px;
-        left: 0;
-        padding: 10px;
-        background-color: rgba(210, 190, 160, 0.95);
-        border-radius: 10px;
-        box-shadow: -3px 0 12px rgba(0,0,0,0.25);
-    }
-
-    .divbar ul li a {
-        font-size: 18px;
-        padding: 6px 0;
-    }
-
-     .cat-container, .best-container {
-        grid-template-columns: 1fr;
-    }
-    .products-grid {
-        grid-template-columns: 1fr;
-        padding: 0 5px;
-        gap: 15px;
-    }
-    .product-card {
-        max-width: 100%;
-    }
-      .desc-text {
-    display: none !important;
+  header {
+    height: 60px;
+    padding: 0 10px;
+    grid-template-columns: auto 1fr;
   }
 
-  .i {
-    display: inline-block !important; /* تأكد أنها ظاهرة */
+  .menu-btn {
+    margin-left: auto;
   }
 
-    .footer {
-        padding: 15px 10px;
-        font-size: 14px;
-    }
+  .divbar ul {
+    width: 180px;
+    padding: 15px;
+  }
 
-    .footer h3 {
-        font-size: 18px;
-    }
+  .divbar a {
+    font-size: 16px;
+    margin: 6px 0;
+  }
 
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
-        padding: 8px;
-    }
+  .home h3 {
+    font-size: 26px;
+  }
 
-    .footer .btn {
-        width: 100%;
-    }
+  .home span,
+  .home p {
+    font-size: 16px;
+  }
 
-    #messagesList li {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 
-    #messagesList li .delete-btn {
-        font-size: 11px;
-        padding: 4px 8px;
-        margin-top: -14px;
-    }
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .best-container {
+    grid-template-columns: 1fr;
+  }
 }
