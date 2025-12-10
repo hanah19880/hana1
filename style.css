@@ -727,6 +727,20 @@ header {
         font-size: 22px;
         margin-left: 15px;
     }
+
+       /* إخفاء العناصر المطلوبة */
+    .content p,
+    .icons,
+    .home-content p {
+        display: none !important;
+    }
+    
+    /* تحريك أيقونة .i إلى اليمين */
+    .i {
+        float: right;
+        margin-left: 15px;
+        margin-right: 0;
+    }
     
     /* القسم الرئيسي */
     .home {
@@ -808,7 +822,40 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 15px;
     }
+        .cat-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
     
+    .cat-box {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+    
+    .cat-box img {
+        height: 140px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .decor,
+    .succulent,
+    .climbing,
+    .indoor {
+        width: 100% !important;
+        height: 140px !important;
+        object-fit: cover !important;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .cat-box h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
     /* المنتجات */
     .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -869,7 +916,7 @@ header {
     }
     
     .logo img {
-        width: 45px;
+        width: 40px;
         height: 45px;
     }
     
@@ -881,11 +928,28 @@ header {
         width: 25px;
         height: 2.5px;
     }
-    
-    .icons a {
-        font-size: 20px;
-        margin-left: 12px;
+
+       /* إخفاء العناصر المطلوبة */
+    .content p,
+    .icons,
+    .home-content p {
+        display: none !important;
     }
+    
+    /* تحريك أيقونة .i إلى اليمين */
+    .i {
+        float: right;
+        margin-left: 15px;
+        margin-right: 0;
+    }
+     .menu-btn {
+        justify-self: start;
+    }
+    
+    .logo {
+        justify-self: center;
+    }
+ 
     
     /* القسم الرئيسي */
     .home {
@@ -994,7 +1058,30 @@ header {
         font-size: 20px;
         margin: 10px 0;
     }
+    /* تحسين أكثر للهواتف الصغيرة */
+    .cat-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
     
+    .cat-box {
+        max-width: 160px;
+        padding: 8px;
+    }
+    
+    .cat-box img,
+    .decor,
+    .succulent,
+    .climbing,
+    .indoor {
+        height: 110px !important;
+    }
+    
+    .cat-box h3 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
     .cart-row {
         flex-direction: column;
         gap: 12px;
@@ -1044,4 +1131,7 @@ header {
         width: 95%;
         padding-bottom: 20px;
     }
+
+    
 }
+
