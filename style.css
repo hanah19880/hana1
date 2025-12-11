@@ -985,6 +985,9 @@ header {
         font-size: 20px;
         margin: 10px 0;
     }
+              .desc-text {
+    display: none !important;
+  }
     /* تحسين أكثر للهواتف الصغيرة */
     .cat-container {
         grid-template-columns: repeat(2, 1fr);
@@ -1029,6 +1032,7 @@ header {
     }
 
 }
+
 
 
 
