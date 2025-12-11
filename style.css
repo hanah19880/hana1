@@ -148,11 +148,10 @@ header {
     transition: color 0.3s ease;
 }
 
-
-
 .home .content {
     display: grid;
-    gap: 15px;
+    gap: 5px;
+    margin-left: 15px;
 }
 
 .home h3 {
@@ -187,7 +186,7 @@ header {
     background-color: #39853d;
     color: #ffffff;
     padding: 14px 30px;
-    border-radius: 8px;
+    border-radius: 18px;
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
@@ -901,7 +900,6 @@ header {
     
     /* تحريك أيقونة .i إلى اليمين */
     .i {
-        float: right;
         margin-left: 15px;
         margin-right: 0;
         display: inline-block !important; /* تأكد أنها ظاهرة */
@@ -1035,6 +1033,7 @@ header {
     }
 
 }
+
 
 
 
