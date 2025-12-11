@@ -151,7 +151,8 @@ header {
 .home .content {
     display: grid;
     gap: 5px;
-    margin-left: 15px;
+    margin-left: 50%;
+    margin-top: 50%;
 }
 
 .home h3 {
@@ -186,7 +187,7 @@ header {
     background-color: #39853d;
     color: #ffffff;
     padding: 14px 30px;
-    border-radius: 18px;
+    border-radius: 40px;
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
@@ -591,7 +592,7 @@ header {
             background-image: url(img/icons8-website-50.png);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: right;
         }
 
         .cart-row {
@@ -1033,6 +1034,7 @@ header {
     }
 
 }
+
 
 
 
