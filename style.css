@@ -157,7 +157,6 @@ header {
 
 .home h3 {
     font-size: 42px;
-    font-weight: 700;
     color: inherit;
     transition: transform 0.3s ease, color 0.3s ease;
     cursor: default;
@@ -679,8 +678,8 @@ header {
         display: none !important;
     }
     .logo img {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
     
     .menu-btn {
@@ -745,9 +744,13 @@ header {
         .home span {
         font-size: 18px;
         color: rgb(13, 52, 9);
-        max-width: 50%;
+        max-width: 60%;
         word-wrap: break-word;
     }
+    
+.home h3 {
+    font-size: 35px;
+}
     .heading {
         font-size: 32px;
         height: 80px;
@@ -1034,6 +1037,7 @@ header {
     }
 
 }
+
 
 
 
