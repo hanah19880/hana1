@@ -739,8 +739,9 @@ header {
     /* سكشن هوم  */
     .home {
         grid-template-columns: 1fr;
+        padding: 20px;
+        height: auto;
         text-align: right;
-
     }
         .home span {
         font-size: 18px;
@@ -748,6 +749,12 @@ header {
         max-width: 50%;
         word-wrap: break-word;
     }
+    .btn {
+        padding: 12px 25px;
+        font-size: 20px;
+        margin: 15px auto;
+    }
+
     .heading {
         font-size: 32px;
         height: 80px;
@@ -778,7 +785,11 @@ header {
         text-align: center;
         padding: 10px;
     }
-    .categories, .best-sellers, .product-section {
+    
+    /* الأقسام */
+    .categories,
+    .best-sellers,
+    .product-section {
         margin: 20px;
         padding: 25px;
     }
@@ -786,7 +797,9 @@ header {
     .best-title {
         font-size: 28px;
     }
-    .cat-container, .best-container, .products-grid {
+    .cat-container,
+    .best-container,
+    .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 15px;
     }
@@ -829,9 +842,7 @@ header {
     .img-container {
         height: 200px;
     }
-     .desc-text {
-    display: none !important;
-  }
+    
     /* الفوتر */
     .footer {
         height: auto;
@@ -854,13 +865,21 @@ header {
     
     /* سكشن 5 */
     .home1 {
-        padding: 20px 20px;
+        height: auto;
+        padding: 40px 20px;
     }
     
     .home-content h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
-
+    
+    .home-content p {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+              .desc-text {
+    display: none !important;
+  }
 }
 
 /* للهواتف الصغيرة (480px) */
@@ -905,7 +924,13 @@ header {
         margin-right: 0;
         display: inline-block !important; /* تأكد أنها ظاهرة */
 }
-
+    /* القسم الرئيسي */
+    .btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        width: 90%;
+    }
+    
     /* العناوين */
     .heading {
         font-size: 28px;
@@ -968,7 +993,9 @@ header {
         font-size: 18px;
         margin-top: 8px;
     }
-    
+              .desc-text {
+    display: none !important;
+  }
     /* المنتجات */
     .products-grid {
         grid-template-columns: 1fr;
@@ -987,9 +1014,6 @@ header {
         font-size: 20px;
         margin: 10px 0;
     }
-              .desc-text {
-    display: none !important;
-  }
     /* تحسين أكثر للهواتف الصغيرة */
     .cat-container {
         grid-template-columns: repeat(2, 1fr);
@@ -1034,6 +1058,4 @@ header {
     }
 
 }
-
-
 
